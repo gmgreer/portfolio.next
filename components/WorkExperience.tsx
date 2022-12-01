@@ -17,7 +17,7 @@ const WorkExperience = ({experiences}: Props) => {
         
         <h3 className='absolute top-12 first-letter:uppercase tracking-[10px] text-gray-500 text-2xl'>Experience</h3>
         
-        <div className='w-full flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[orange]/80'>
+        <div className='w-full flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[orange]/80 '>
             {experiences.map(experience => (
               <ExperienceCard key={experience._id} experience={experience}/>
             ))}
