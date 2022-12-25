@@ -22,10 +22,7 @@ const { register, handleSubmit, } = useForm<Inputs>();
         <div className='flex flex-col space-y-10'>
             <h4 className='text-4xl font-semibold text-center'> <span className='decoration-[orange]/50 underline'>Lets Talk</span> </h4>
             <div className='space-y-10'>
-                <div className='flex items-center space-x-5 justify-center'>
-                    <PhoneIcon className='text-[orange] h-7 w-7 animate-pulse'/>
-                    <p className='text-2xl'>1234567890</p>
-                </div>
+               
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='text-[orange] h-7 w-7 animate-pulse'/>
                     <p className='text-2xl'>garrett.m.greer5@gmail.com</p>
