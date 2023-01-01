@@ -37,16 +37,16 @@ const Projects = ({projects}: Props) => {
                             />
                         
                     <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-                        <h4 className='text-4xl font-semibold text-center'><span className='hover:underline decoration-[orange]/50'><a href={project.LinkToBuild} target='_blank' rel="noreferrer">{project?.title}</a></span></h4>
+                        <h4 className='text-3xl font-semibold text-center'><span className='hover:underline decoration-[orange]/50'><a href={project.LinkToBuild} target='_blank' rel="noreferrer">{project?.title}</a></span></h4>
                         <div className='flex items-center space-x-2 justify-center'>
 
                         {project?.technologies.map(technology => (
                             <img
-                            className='h-10 w-10' 
+                            className='h-8 w-8' 
                             key={technology._id}src={urlFor(technology.image).url()} alt="" />
                             ))}
                             </div>
-                        <p className='text-lg text-center md:text-left'>{project?.summary}</p> 
+                        <p className='text-md text-center md:text-left'>{project?.summary}</p> 
                     </div>
                 </div>
             ))}
